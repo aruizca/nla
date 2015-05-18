@@ -38,9 +38,11 @@
 <hr/>
 <dl class="dl-horizontal">
     <dt>Web Framework:</dt>
-    <dd>Grails 2.5.0</dd>
+    <dd>Grails 2.5.0 (source code targets Java 7)</dd>
     <dt>Persistence Framework:</dt>
     <dd>GORM</dd>
+    <dt>Relational DB:</dt>
+    <dd>H2 (in-memory)</dd>
     <dt>Client side:</dt>
     <dd>jQuery 1.11.1, Bootstrap 3.3.4, Font Awesome 3.4.0</dd>
     <dt>REST client:</dt>
