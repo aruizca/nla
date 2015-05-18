@@ -1,0 +1,87 @@
+body {
+    padding-top: 50px;
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/*************/
+
+.book-thumbnail {
+    height: 250px;
+}
+
+.book-thumbnail:hover, .member-thumbnail:hover {
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    cursor: pointer;
+}
+
+.book-thumbnail img {
+    height: 160px;
+    margin-bottom: .5em;
+}
+
+#bookModal .modal-body{
+    min-height: 200px;
+}
+
+.book-details dt {
+    width: 120px;
+}
+
+.book-details dd {
+    margin-left: 140px;
+}
+
+/****************************
+  ANIMATIONS
+*****************************/
+@keyframes clockwise {
+    to {
+        transform: rotate(360deg) translatez(0);
+    }
+}
+@keyframes counter-clockwise {
+    to {
+        transform: rotate(-360deg) translatez(0);
+    }
+}
+/****************************
+  ANDROID SPINNER
+*****************************/
+.progress-spinner {
+    height: 44px;
+    width: 44px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(112, 112, 112, 0.75) rgba(36, 36, 36, 0.25) rgba(36, 36, 36, 0.25) rgba(36, 36, 36, 0.25);
+    border-radius: 100%;
+    animation: clockwise 0.75s linear infinite;
+}
+
+
+
+/* position spinner in the middle of the page for demonstration */
+.progress-spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+}
